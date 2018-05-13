@@ -47,12 +47,22 @@
 
 #clockLabel {
   font-size: 70;
-  font-family: Colfax-Medium;
+  font-family: Seville-Regular;
   text-length: 32;
-  text-anchor: middle;
-  x: 50%;
+  text-anchor: start;
+  x: 15%; 
   y: 36%;
-  fill: white;
+  fill: lime;
+}
+
+#clockSecondsLabel {
+  font-size: 30;
+  font-family: Seville-Regular;
+  text-length: 32;
+  text-anchor: start;
+  x: 70%;
+  y: 36%;
+  fill: lime;
 }
 
 #hrLabel {

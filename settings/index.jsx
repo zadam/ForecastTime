@@ -3,9 +3,13 @@ function mySettings(props) {
     <Page>
       <Section
         title={<Text bold align="center">Weather</Text>}>
-        <Toggle
-           settingsKey="unitToggle"
-           label="Tempterature in °F or °C"
+        <Select
+          label={`Temperature units`}
+          settingsKey="temperatureUnits"
+          options={[
+            {name:"Celsius"},
+            {name:"Fahrenheit"}
+          ]}
          />
         <Toggle
            settingsKey="weatherScrollToggle"
@@ -43,10 +47,6 @@ function mySettings(props) {
          <Text align="center">
            Decreasing this will use more PHONE battery.
          </Text>
-         <Toggle
-           settingsKey="dataAgeToggle"
-           label="Show time of last weather update"
-         />
          <Toggle
            settingsKey="errorMessageToggle"
            label="Show weather error messages"
@@ -116,48 +116,6 @@ function mySettings(props) {
             {color: "#FF006A"}
           ]}
         />
-      </Section>
-      <Section
-        title={<Text bold align="center">Contact Me</Text>}>
-        <Text>
-          Please don't hesitiate to contact me with questions or suggestions; but be sure to let me know which app or watchface you are talking about. This and all my other apps will always be free and Open Source. If you really like my app please considder buying me a coffee (or more likely electonic components that end up in my classroom). Thanks!
-        </Text>
-        <Link source="https://rawgit.com/cmspooner/Kearsarge-Time-for-Fitbit-Ionic/master/settings/email.html">
-          <TextImageRow
-            label="Email"
-            sublabel="cmspooner@gmail.com"
-            icon="https://github.com/cmspooner/Kearsarge-Time-for-Fitbit-Ionic/blob/master/resources/icons/settings/Email.png?raw=true"
-          />
-        </Link>
-        <Link source="https://github.com/cmspooner">
-          <TextImageRow
-            label="Github"
-            sublabel="https://github.com/cmspooner"
-            icon="https://github.com/cmspooner/Kearsarge-Time-for-Fitbit-Ionic/blob/master/resources/icons/settings/Github.png?raw=true"
-          />
-        </Link>
-        <Link source="https://paypal.me/CMSpooner">
-          <TextImageRow
-            label="PayPal"
-            sublabel="cmspooner@gmail.com"
-            icon="https://github.com/cmspooner/Kearsarge-Time-for-Fitbit-Ionic/blob/master/resources/icons/settings/Paypal.png?raw=true"
-          />
-        </Link>
-      </Section>
-      <Section
-        title={<Text bold align="center">Build Version and Notes</Text>}>
-        <Text>
-          1.3: Fixed disabled typo.
-         </Text>
-         <Text>
-          1.2: Missed changing some references to local fitness values to account values.
-         </Text>
-         <Text>
-           1.1: Added scrolling text for long locations & conditions.
-        </Text>
-         <Text>
-          1.0: First Release.
-        </Text>
       </Section>
     </Page>
   );

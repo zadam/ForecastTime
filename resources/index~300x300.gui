@@ -7,19 +7,16 @@
     <line id = "seperatorLine" x1="3%" y1="15%" x2="97%" y2="15%"/>
     <circle id = "seperatorEndRight"cx="97%" cy="15%" />
     <text id="clockLabel" />
+    <text id="clockSecondsLabel" />
     <image x="23%" y="44%" width="18" height="18" href="icons/18/heart.png" load="sync"/>
     <text id="hrLabel" />
     <image x="23%" y="55%" width="18" height="18" href="icons/18/steps.png" load="sync"/>
     <text id="stepsLabel" />
     <image x="23%" y="66%" width="18" height="18" href="icons/18/calories.png" load="sync"/>
     <text id="calsLabel" />
-    <image id="weatherImage" x="10" y="77%" width="60" height="60" href="" load="sync"/>
-    <use id="tempAndConditionLabel" href='#marquee-text' value="50" font-size='28' font-family="Colfax-Bold" 
-          width='70%' height='10%' x="75" y ="78%" fill='white'>
-       <set href='group/text' attributeName='text-buffer' />
-    </use>
-    <use id="weatherLocationLabel" href='#marquee-text' value="50" font-size='28' font-family="Colfax-Regular" 
-          width='70%' height='10%' x="75" y ="88%" fill='white'>
+    <image id="weatherImage" x="10" y="83%" width="30" height="30" href="" load="sync"/>
+    <use id="tempAndConditionLabel" href='#marquee-text' value="50" font-size='20' font-family="Colfax-Bold" 
+          width='70%' height='7%' x="50" y="83%" fill='white'>
        <set href='group/text' attributeName='text-buffer' />
     </use>
   </svg>
